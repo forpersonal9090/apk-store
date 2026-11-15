@@ -89,10 +89,10 @@
         <span class="badge">Android APK</span>
         <h2>MedPulsePos</h2>
         <p>Medical Store Inventory, Expiry Tracking & POS Billing System.</p>
-        <a class="btn-download" href="MedPulsePos.apk" download>Download APK</a>
+        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/raw/main/MedPulsePos.apk">Download APK</a>
       </div>
       <div class="qr-box">
-        <img class="qr-img" data-file="MedPulsePos.apk" alt="MedPulsePos QR" />
+        <img class="qr-img" data-url="https://github.com/forpersonal9090/apk-store/raw/main/MedPulsePos.apk" alt="MedPulsePos QR" />
         <span>SCAN TO DOWNLOAD</span>
       </div>
     </div>
@@ -103,7 +103,7 @@
         <span class="badge">Android APK</span>
         <h2>TurboCamApp</h2>
         <p>Camera & Media Utility Application with Gallery Saving & Sharing.</p>
-        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/TurboCamApp.apk" download>Download APK</a>
+        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/TurboCamApp.apk">Download APK</a>
       </div>
       <div class="qr-box">
         <img class="qr-img" data-url="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/TurboCamApp.apk" alt="TurboCamApp QR" />
@@ -117,7 +117,7 @@
         <span class="badge">Android APK</span>
         <h2>Installement</h2>
         <p>Customer Installment Schedule & Device Tracking Application.</p>
-        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/Installement.apk" download>Download APK</a>
+        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/Installement.apk">Download APK</a>
       </div>
       <div class="qr-box">
         <img class="qr-img" data-url="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/Installement.apk" alt="Installement QR" />
@@ -131,7 +131,7 @@
         <span class="badge">Android APK</span>
         <h2>Admin</h2>
         <p>Administrative Management & Control Application.</p>
-        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/Admin.apk" download>Download APK</a>
+        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/Admin.apk">Download APK</a>
       </div>
       <div class="qr-box">
         <img class="qr-img" data-url="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/Admin.apk" alt="Admin QR" />
@@ -145,7 +145,7 @@
         <span class="badge">Android APK</span>
         <h2>CvMake</h2>
         <p>Resume & CV Builder Android Application.</p>
-        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/CvMake.apk" download>Download APK</a>
+        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/CvMake.apk">Download APK</a>
       </div>
       <div class="qr-box">
         <img class="qr-img" data-url="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/CvMake.apk" alt="CvMake QR" />
@@ -159,11 +159,8 @@
   </div>
 
   <script>
-    const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
     document.querySelectorAll('.qr-img').forEach(img => {
-      const directUrl = img.getAttribute('data-url');
-      const fileName = img.getAttribute('data-file');
-      const targetUrl = directUrl ? directUrl : (baseUrl + fileName);
+      const targetUrl = img.getAttribute('data-url');
       img.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(targetUrl)}`;
     });
   </script>

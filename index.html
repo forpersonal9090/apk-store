@@ -1,221 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ALI Raza — Official App Store & APK Downloads</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, sans-serif;
-        }
-
-        body {
-            margin: 0;
-            background: #0A1E3C;
-            color: #FFFFFF;
-            padding: 24px 16px;
-        }
-
-        .container {
-            max-width: 860px;
-            margin: 0 auto;
-        }
-
-        header {
-            text-align: center;
-            padding: 22px;
-            background: #102A4C;
-            border-radius: 16px;
-            border: 1px solid #00A88F;
-            margin-bottom: 24px;
-        }
-
-            header h1 {
-                margin: 0 0 8px;
-                color: #FFD700;
-                font-size: 26px;
-            }
-
-            header p {
-                margin: 0;
-                color: #CBD5E1;
-                font-size: 14px;
-            }
-
-        .app-card {
-            background: #102A4C;
-            border-radius: 16px;
-            padding: 20px;
-            margin-bottom: 18px;
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between;
-            gap: 16px;
-            border: 1px solid #1E3A5F;
-        }
-
-        .app-info {
-            flex: 1 1 300px;
-        }
-
-            .app-info h2 {
-                margin: 0 0 6px;
-                color: #00E5C3;
-                font-size: 20px;
-            }
-
-            .app-info p {
-                margin: 0 0 12px;
-                color: #E2E8F0;
-                font-size: 14px;
-                line-height: 1.5;
-            }
-
-        .badge {
-            display: inline-block;
-            background: #006666;
-            color: #FFF;
-            padding: 4px 10px;
-            border-radius: 20px;
-            font-size: 12px;
-            margin-bottom: 10px;
-        }
-
-        .btn-download {
-            display: inline-block;
-            background: #00A88F;
-            color: #0A1E3C;
-            font-weight: 700;
-            text-decoration: none;
-            padding: 12px 22px;
-            border-radius: 10px;
-            font-size: 15px;
-        }
-
-            .btn-download:hover {
-                background: #00C9AB;
-            }
-
-        .qr-box {
-            text-align: center;
-            background: #FFFFFF;
-            color: #0A1E3C;
-            padding: 10px;
-            border-radius: 12px;
-            width: 140px;
-        }
-
-            .qr-box img {
-                width: 116px;
-                height: 116px;
-                display: block;
-                margin: 0 auto 6px;
-            }
-
-            .qr-box span {
-                font-size: 11px;
-                font-weight: 700;
-            }
-
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            color: #94A3B8;
-            font-size: 13px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ALI Raza — Official App Store & APK Downloads</title>
+  <style>
+    * { box-sizing: border-box; font-family: 'Segoe UI', Tahoma, sans-serif; }
+    body {
+      margin: 0;
+      background: #0A1E3C;
+      color: #FFFFFF;
+      padding: 24px 16px;
+    }
+    .container { max-width: 860px; margin: 0 auto; }
+    header {
+      text-align: center;
+      padding: 22px;
+      background: #102A4C;
+      border-radius: 16px;
+      border: 1px solid #00A88F;
+      margin-bottom: 24px;
+    }
+    header h1 { margin: 0 0 8px; color: #FFD700; font-size: 26px; }
+    header p { margin: 0; color: #CBD5E1; font-size: 14px; }
+    .app-card {
+      background: #102A4C;
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      border: 1px solid #1E3A5F;
+    }
+    .app-info { flex: 1 1 300px; }
+    .app-info h2 { margin: 0 0 6px; color: #00E5C3; font-size: 20px; }
+    .app-info p { margin: 0 0 12px; color: #E2E8F0; font-size: 14px; line-height: 1.5; }
+    .badge {
+      display: inline-block;
+      background: #006666;
+      color: #FFF;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+    .btn-download {
+      display: inline-block;
+      background: #00A88F;
+      color: #0A1E3C;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 12px 22px;
+      border-radius: 10px;
+      font-size: 15px;
+    }
+    .btn-download:hover { background: #00C9AB; }
+    .qr-box {
+      text-align: center;
+      background: #FFFFFF;
+      color: #0A1E3C;
+      padding: 10px;
+      border-radius: 12px;
+      width: 140px;
+    }
+    .qr-box img { width: 116px; height: 116px; display: block; margin: 0 auto 6px; }
+    .qr-box span { font-size: 11px; font-weight: 700; }
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #94A3B8;
+      font-size: 13px;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Official Android APK Portal</h1>
-            <p>Scan QR Code with Mobile Camera or Tap Download to Install APK</p>
-        </header>
+  <div class="container">
+    <header>
+      <h1>Official Android APK Portal</h1>
+      <p>Scan QR Code with Mobile Camera or Tap Download to Install APK</p>
+    </header>
 
-        <!-- 1. MedPulsePos -->
-        <div class="app-card">
-            <div class="app-info">
-                <span class="badge">Android APK</span>
-                <h2>MedPulsePos</h2>
-                <p>Medical Store Inventory, Expiry Tracking & POS Billing System.</p>
-                <a class="btn-download" href="MedPulsePos.apk" download>Download APK</a>
-            </div>
-            <div class="qr-box">
-                <img class="qr-img" data-file="MedPulsePos.apk" alt="MedPulsePos QR" />
-                <span>SCAN TO DOWNLOAD</span>
-            </div>
-        </div>
-
-        <!-- 2. TurboCamApp -->
-        <div class="app-card">
-            <div class="app-info">
-                <span class="badge">Android APK</span>
-                <h2>TurboCamApp</h2>
-                <p>Camera & Media Utility Application with Gallery Saving & Sharing.</p>
-                <a class="btn-download" href="TurboCamApp.apk" download>Download APK</a>
-            </div>
-            <div class="qr-box">
-                <img class="qr-img" data-file="TurboCamApp.apk" alt="TurboCamApp QR" />
-                <span>SCAN TO DOWNLOAD</span>
-            </div>
-        </div>
-
-        <!-- 3. Installement -->
-        <div class="app-card">
-            <div class="app-info">
-                <span class="badge">Android APK</span>
-                <h2>Installement</h2>
-                <p>Customer Installment Schedule & Device Tracking Application.</p>
-                <a class="btn-download" href="Installement.apk" download>Download APK</a>
-            </div>
-            <div class="qr-box">
-                <img class="qr-img" data-file="Installement.apk" alt="Installement QR" />
-                <span>SCAN TO DOWNLOAD</span>
-            </div>
-        </div>
-
-        <!-- 4. Admin -->
-        <div class="app-card">
-            <div class="app-info">
-                <span class="badge">Android APK</span>
-                <h2>Admin</h2>
-                <p>Administrative Management & Control Application.</p>
-                <a class="btn-download" href="Admin.apk" download>Download APK</a>
-            </div>
-            <div class="qr-box">
-                <img class="qr-img" data-file="Admin.apk" alt="Admin QR" />
-                <span>SCAN TO DOWNLOAD</span>
-            </div>
-        </div>
-
-        <!-- 5. CvMake -->
-        <div class="app-card">
-            <div class="app-info">
-                <span class="badge">Android APK</span>
-                <h2>CvMake</h2>
-                <p>Resume & CV Builder Android Application.</p>
-                <a class="btn-download" href="CvMake.apk" download>Download APK</a>
-            </div>
-            <div class="qr-box">
-                <img class="qr-img" data-file="CvMake.apk" alt="CvMake QR" />
-                <span>SCAN TO DOWNLOAD</span>
-            </div>
-        </div>
-
-        <footer>
-            Developed by <strong>ALI Raza</strong> | Contact: <strong>03261881595</strong>
-        </footer>
+    <!-- 1. MedPulsePos -->
+    <div class="app-card">
+      <div class="app-info">
+        <span class="badge">Android APK</span>
+        <h2>MedPulsePos</h2>
+        <p>Medical Store Inventory, Expiry Tracking & POS Billing System.</p>
+        <a class="btn-download" href="MedPulsePos.apk" download>Download APK</a>
+      </div>
+      <div class="qr-box">
+        <img class="qr-img" data-file="MedPulsePos.apk" alt="MedPulsePos QR" />
+        <span>SCAN TO DOWNLOAD</span>
+      </div>
     </div>
 
-    <script>
-            const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
-            document.querySelectorAll('.qr-img').forEach(img => {
-              const fileName = img.getAttribute('data-file');
-              const fullApkUrl = encodeURIComponent(baseUrl + fileName);
-              img.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${fullApkUrl}`;
-            });
-    </script>
+    <!-- 2. TurboCamApp -->
+    <div class="app-card">
+      <div class="app-info">
+        <span class="badge">Android APK</span>
+        <h2>TurboCamApp</h2>
+        <p>Camera & Media Utility Application with Gallery Saving & Sharing.</p>
+        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/TurboCamApp.apk" download>Download APK</a>
+      </div>
+      <div class="qr-box">
+        <img class="qr-img" data-url="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/TurboCamApp.apk" alt="TurboCamApp QR" />
+        <span>SCAN TO DOWNLOAD</span>
+      </div>
+    </div>
+
+    <!-- 3. Installement -->
+    <div class="app-card">
+      <div class="app-info">
+        <span class="badge">Android APK</span>
+        <h2>Installement</h2>
+        <p>Customer Installment Schedule & Device Tracking Application.</p>
+        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/Installement.apk" download>Download APK</a>
+      </div>
+      <div class="qr-box">
+        <img class="qr-img" data-url="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/Installement.apk" alt="Installement QR" />
+        <span>SCAN TO DOWNLOAD</span>
+      </div>
+    </div>
+
+    <!-- 4. Admin -->
+    <div class="app-card">
+      <div class="app-info">
+        <span class="badge">Android APK</span>
+        <h2>Admin</h2>
+        <p>Administrative Management & Control Application.</p>
+        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/Admin.apk" download>Download APK</a>
+      </div>
+      <div class="qr-box">
+        <img class="qr-img" data-url="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/Admin.apk" alt="Admin QR" />
+        <span>SCAN TO DOWNLOAD</span>
+      </div>
+    </div>
+
+    <!-- 5. CvMake -->
+    <div class="app-card">
+      <div class="app-info">
+        <span class="badge">Android APK</span>
+        <h2>CvMake</h2>
+        <p>Resume & CV Builder Android Application.</p>
+        <a class="btn-download" href="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/CvMake.apk" download>Download APK</a>
+      </div>
+      <div class="qr-box">
+        <img class="qr-img" data-url="https://github.com/forpersonal9090/apk-store/releases/download/v1.0/CvMake.apk" alt="CvMake QR" />
+        <span>SCAN TO DOWNLOAD</span>
+      </div>
+    </div>
+
+    <footer>
+      Developed by <strong>ALI Raza</strong> | Contact: <strong>03261881595</strong>
+    </footer>
+  </div>
+
+  <script>
+    const baseUrl = window.location.href.substring(0, window.location.href.lastIndexOf('/') + 1);
+    document.querySelectorAll('.qr-img').forEach(img => {
+      const directUrl = img.getAttribute('data-url');
+      const fileName = img.getAttribute('data-file');
+      const targetUrl = directUrl ? directUrl : (baseUrl + fileName);
+      img.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(targetUrl)}`;
+    });
+  </script>
 </body>
 </html>
